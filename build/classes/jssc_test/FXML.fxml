@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="100.0" prefHeight="251.0" prefWidth="377.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="jssc_test.FXMLDocumentController">
+  <children>
+    <HBox id="HBox" alignment="CENTER" layoutX="93.0" layoutY="172.0" prefWidth="-1.0" spacing="35.0">
+      <children>
+        <ComboBox fx:id="portBox" prefHeight="-1.0" prefWidth="-1.0" promptText="Select Port">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Button defaultButton="true" mnemonicParsing="false" onAction="#handleUpload" prefWidth="-1.0" text="Upload" />
+      </children>
+    </HBox>
+    <Separator layoutX="1.0" layoutY="213.0" prefWidth="376.0" />
+    <Text layoutX="90.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Firmware Updater">
+      <font>
+        <Font name="Arial Black" size="20.0" />
+      </font>
+    </Text>
+    <ImageView id="TRLogo" layoutX="9.0" layoutY="7.0" pickOnBounds="true">
+      <image>
+        <Image url="@TRLogo.png" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Pane layoutX="0.0" layoutY="213.0" prefHeight="38.0" prefWidth="377.0" styleClass="feedBack">
+      <stylesheets>
+        <URL value="@fxmll.css" />
+      </stylesheets>
+    </Pane>
+    <Label fx:id="feedbackTxt" layoutX="14.0" layoutY="221.0" text="Waiting to upload" />
+  </children>
+  <stylesheets>
+    <URL value="@fxmll.css" />
+  </stylesheets>
+</AnchorPane>

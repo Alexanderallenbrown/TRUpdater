@@ -1,0 +1,10 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.background {    
+    -fx-background-color: #fff;
+}
+.feedBack {    
+    -fx-background-color: #ddd;
+}
